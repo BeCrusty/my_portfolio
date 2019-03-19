@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
+body {
+  width: 100vw;
+  color: #F9FAFA;
+  margin-bottom: 20vh;
+}
+
+body section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+body section .child {
+  margin-top: 20vh;
+  height: 60vh;
+  background-color: #4BB2EA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section .child .tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+}
+body section .child .tile .profile {
+  background-image: url(Headshot.png);
+  background-size: cover;
+  border-radius: 50%;
+  height: 10em;
+  width: 10em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  background: #6EC4EC;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.507);
+}
+header div {
+  align-self: center;
+}
+header a img {
+  display: inline-block;
+  max-width: 20px;
+  min-width: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 15vh;
+  right: 0;
+  width: 20vw;
+  align-items: center;
+  height: 70vh;
+  background: #06080A;
+}
+nav ul {
+  list-style: none;
+  padding: 2vw;
+}
+nav li {
+  color: #91BBD0;
+}
+nav li:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,103 @@
+@import "variables";
+
+body {
+  width: 100vw;
+  color: $background;
+  margin-bottom: 20vh;
+}
+
+body section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  .child {
+    margin-top: 20vh;
+    height: 60vh;
+    background-color: $tiles;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 200px;
+      .profile {
+        background-image: url(Headshot.png);
+        background-size: cover;
+        border-radius: 50%;
+        height: 10em;
+        width: 10em;
+      }
+    }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+	width: 100vw;
+	height: 10vh;
+	background: $tiles_light;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.507);
+  div {
+    align-self: center;
+  }
+  a img {
+    display: inline-block;
+    max-width: 20px;
+    min-width: 20px;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 15vh;
+  right: 0;
+	width: 20vw;
+  align-items: center;
+  height: 70vh;
+  background: $menu;
+  ul {
+    list-style: none;
+    padding: 2vw;
+  }
+  li {
+    color: $links;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+// // creating a scroll snap effect vertically
+
+
+
+// //  horizontally
+// .container {
+//     scroll-snap-type: x mandatory;
+//     scroll-padding: 50%;
+// }
+// .child {
+//     scroll-snap-align: center;
+//   }
+
+// .container {
+//   scroll-snap-type: mandatory;
+//   scroll-snap-points-y: repeat(300px);
+//   scroll-snap-type: y mandatory;
+//   .child {
+//    scroll-snap-align: start;
+//   }
+// }
