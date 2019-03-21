@@ -1,103 +1,211 @@
 @import "variables";
 
-body {
-  width: 100vw;
-  color: $background;
-  margin-bottom: 20vh;
-}
-
-body section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 10%;
-  .child {
-    margin-top: 20vh;
-    height: 60vh;
-    background-color: $tiles;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .tile {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      max-width: 200px;
-      .profile {
-        background-image: url(Headshot.png);
-        background-size: cover;
-        border-radius: 50%;
-        height: 10em;
-        width: 10em;
-      }
-    }
-  }
+@-webkit-keyframes scroll-my-mouse {
+  0% {top: 0em;}
+  100% {top : 0.5em;}
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-	width: 100vw;
-	height: 10vh;
-	background: $tiles_light;
-  border-bottom: 10px solid rgba(0, 0, 0, 0.507);
-  div {
-    align-self: center;
-  }
-  a img {
-    display: inline-block;
-    max-width: 20px;
-    min-width: 20px;
-  }
-}
-
-nav {
+  .sidebar {
+  z-index: 3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  top: 15vh;
-  right: 0;
-	width: 20vw;
+  justify-content: flex-start;
   align-items: center;
-  height: 70vh;
-  background: $menu;
-  ul {
-    list-style: none;
-    padding: 2vw;
-  }
-  li {
-    color: $links;
-    &:hover {
-      text-decoration: underline;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+	width: 12vw;
+  background: $tiles;
+  border-right: 2px solid rgba(255, 255, 255, 0.589);
+    .icons {
+      padding: 1vh;
     }
   }
 }
+nav {
+  z-index: 3;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+  background: url(menu.png) center no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  height: 7vh;
+  width: 7vh;
+  margin-bottom: 10vh;
+  margin-top: -20vh;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 5vh 0;
+  padding-top: 5vh;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  // top: ;
+  background-color: #f9f9f979;
+  // min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
-// // creating a scroll snap effect vertically
+body{
+  overflow-y : scroll;
+  color: $main_text;
+  background: $background bottom right no-repeat;
+  background-size: cover;
+  section {
+    margin-bottom: 10vh;
+    .scroller{
+      z-index: 3;
+      position: fixed;
+      top: 27vh;
+      right: 9vw;
+      .mouse {
+        position: absolute;
+        right: 0.3em;
+        height: 2em;
+        width: auto;
+      }
+      .wheel {
+        position: absolute;
+        right: 1em;
+        height: 1em;
+        width: auto;
+        animation: scroll-my-mouse 1s 2s infinite alternate;
+      }
+      span {
+        font-size: smaller;
+        position: fixed;
+        top: 30vh;
+        right: 5vw;
+      }
+    }
+    .info{
+      position: fixed;
+      display: flex;
+      top: 10vh;
+      width: 100vw;
+      justify-content: center;
+      .profile {
+        margin-left: 15vw;
+        display: block;
+        height: 12vh;
+        width: auto;
+        border-radius: 50%;
+      }
+      p {
+        color: #5A4736;
+        font-size: 1.5em;
+        padding-left: 2vw;
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    h1 {
+      font-family: $title_font;
+      margin-block-start: 4em;
+      margin-block-end: 0;
+    }
+    h3 {
+      font-family: $title_font;
+      color: $text_light;
+      margin-block-start: 0;
+    }
+    p {
+      font-family: $font;
+    }
+    .backdrop1 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      img {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 120vw;
+        height: 100vh;
+      }
+    }
+    .child {
+      height: 80vh;
+      display: flex;
+      margin:0 9vw 0 32vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
+  }
+}
+#home {
+  p{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  }
+  span {
+    color: $text_light;
+  }
+}
 
-
-// //  horizontally
-// .container {
-//     scroll-snap-type: x mandatory;
-//     scroll-padding: 50%;
-// }
-// .child {
-//     scroll-snap-align: center;
-//   }
-
-// .container {
-//   scroll-snap-type: mandatory;
-//   scroll-snap-points-y: repeat(300px);
-//   scroll-snap-type: y mandatory;
-//   .child {
-//    scroll-snap-align: start;
-//   }
-// }
+@media only screen and (max-width: 500px) {
+  .backdrop2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .backdrop2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    img {
+      display: block;
+      border-bottom: 1vh solid $tiles;
+      position: absolute;
+      top: 0;
+      left: 10vw;
+      width: 100vw;
+      height: 99vh;
+    }
+  }
+}

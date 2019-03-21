@@ -6,64 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="zocial.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-            <h2>Benjamin Crow</h2>
-            <div>
-                <a href="https://twitter.com/BenCrow95406267"><img src="Twitter-Rounded.png" alt="Twitter Logo"></a>
+        <div class="sidebar">
+
+            <!-- Drop down menu from menu button seen on sidebar -->
+            <nav class="dropdown">
+                <button class="dropbtn"></button>
+                <div class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#aboutme">About</a>
+                    <a href="#projects">Projects</a>
+                </div>
+            </nav>
+
+            <!-- Side bar with options for contacting me/seeing me on social media. -->
+            <div class="icons">
+                <a href="https://github.com/BeCrusty" target="_blank" class="zocial github icon"></a>
             </div>
-            <div>
-                <a href="https:www.linkedin.com/in/benjamin-crow-a35280181"><img src="L-In-box.png" alt="Linked In Logo"></a>
+            <div class="icons">
+                <a href="https://twitter.com/BenCrow95406267" target="_blank" class="zocial twitter icon"></a>
             </div>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/benjamin-crow-a35280181" target="_blank" class="zocial linkedin icon"></a>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/ben.crow.921" target="_blank" class="zocial facebook icon"></a>
+            </div>
+            <div class="icons">
+                <a href="mailto:bennycrow91@gmail.com" target="_blank" class="zocial gmail icon"></a>
+            </div>
+             
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li>link1</li>
-            <li>link2</li>
-            <li>link3</li>
-            <li>link4</li>
-        </ul>
-    </nav>
 
     <section>
-        <div class="child">
-            <div class="tile">
-                <div class="profile">
-                      
-                </div>
-                <p>I am a dude who has some mad skills</p>
-            </div>
+        <!-- Frames the viewport. Content scrolls into the center space. -->
+        <div class="backdrop1">
+            <img src="desk-frame.png" alt="overhead shot of white desk with plants and stationary around the edges. The center is cut out to frame the main content.">
         </div>
-        <div class="child">
-            <div class="tile">
-                <h2>All About Me</h2>
-                <p>Some more text talking about me</p>
-            </div>
+        <div class="backdrop2">
+            <img src="wood-backing.png" alt="Antique light brown wood acting as a background with the center cut out to frame the content.">
         </div>
+
+        <!-- Name and avatar image fixed above content space. -->
+        <div class="info">
+            <img class=profile src="myAvatar.png" alt="cartoon image of man's face. Brown hair, blue eyes, light skin and a small smile.">
+            <p>Ben Crow</p>
+        </div>
+
+        <!-- Image to prompt viewer to scroll -->
+        <div class="scroller">
+            <img class="mouse" src="mouse-outline.png" alt="Outline of a computer mouse">
+            <img class="wheel" src="mouse-button.png" alt="moving computer mouse scroll wheel prompting you to scroll">
+            <!-- <span>There's More!</span> -->
+        </div>
+
+        <!-- Box for phrase that sells me as a web dev -->
+        <a id="home"></a>
+        <div class="child" id="home">
+            <h1>Web Developer</h1>
+            <h3>(In Training)</h3>
+            <p>Collaborator : Communicator : Organized : Problem Solver</p>
+            <span>--------------------------</span>
+            <p>Full Stack : Agile</p>
+            <span>--------------------------</span>
+            <p>Ruby : Python : HTML : CSS</p>
+            <span>--------------------------</span>
+        </div>
+        <!-- More info on my skills/work history -->
+        <a id="aboutme"></a>
+        <div class="child">  
+            <h2>All About Me</h2>
+            <p>Some more text talking about me</p>
+        </div>
+        <!-- Section with table of previous projects with links to more detailed pages -->
+        
         <div class="child">
-            <div class="tile">
-                <h2>Projects</h2>
-                <div>
-                    <h3>Code</h3>
-                    <ol>
-                        <li>A code project</li>
-                    </ol>
-                    <h3>Writing</h3>
-                    <ol>
-                        <li>A writing project</li>
-                    </ol>
-                    <h3>Hobby's</h3>
-                    <ol>
-                        <li>Outdoor Stuff</li>
-                    </ol>
-                </div>
-            </div>        
+            <a id="projects"></a>
+            <h2>Projects</h2>
+            <div>
+                <h3>Code</h3>
+                <ol>
+                    <li>A code project</li>
+                </ol>
+                <h3>Writing</h3>
+                <ol>
+                    <li>A writing project</li>
+                </ol>
+                <h3>Hobby's</h3>
+                <ol>
+                    <li>Outdoor Stuff</li>
+                </ol>
+            </div>   
         </div>
     </section>
     <footer>
-
     </footer>
 </body>
 </html>

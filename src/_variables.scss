@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
-$tiles: #4BB2EA;
-$tiles_light: #6EC4EC;
+$tiles: #5A4736;
+$main_text: rgb(240, 247, 252);
+$text_light: rgba(240, 247, 252, 0.700);
 $menu: #06080A;
-$background: #F9FAFA;
-$links: #91BBD0;
+$frame1: url(desk-frame.png);
+$frame2: url(wood-backing.png);
+$background: url(screen-background.png);
+$links: #5A4736;
 $font: 'Open Sans', sans-serif;
-$title-font: 'Montserrat', sans-serif;
+$title_font: 'Montserrat', sans-serif;

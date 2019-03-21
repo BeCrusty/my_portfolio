@@ -1,81 +1,211 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
-body {
-  width: 100vw;
-  color: #F9FAFA;
-  margin-bottom: 20vh;
+@-webkit-keyframes scroll-my-mouse {
+  0% {
+    top: 0em;
+  }
+  100% {
+    top: 0.5em;
+  }
 }
-
-body section {
+header .sidebar {
+  z-index: 3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 10%;
-}
-body section .child {
-  margin-top: 20vh;
-  height: 60vh;
-  background-color: #4BB2EA;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body section .child .tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 200px;
-}
-body section .child .tile .profile {
-  background-image: url(Headshot.png);
-  background-size: cover;
-  border-radius: 50%;
-  height: 10em;
-  width: 10em;
-}
-
-header {
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 10vh;
-  background: #6EC4EC;
-  border-bottom: 10px solid rgba(0, 0, 0, 0.507);
+  left: 0;
+  height: 100vh;
+  width: 12vw;
+  background: #5A4736;
+  border-right: 2px solid rgba(255, 255, 255, 0.589);
 }
-header div {
-  align-self: center;
-}
-header a img {
-  display: inline-block;
-  max-width: 20px;
-  min-width: 20px;
+header .sidebar .icons {
+  padding: 1vh;
 }
 
 nav {
+  z-index: 3;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background: url(menu.png) center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 7vh;
+  width: 7vh;
+  margin-bottom: 10vh;
+  margin-top: -20vh;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 5vh 0;
+  padding-top: 5vh;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  background-color: #f9f9f979;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+  overflow-y: scroll;
+  color: #f0f7fc;
+  background: url(screen-background.png) bottom right no-repeat;
+  background-size: cover;
+}
+body section {
+  margin-bottom: 10vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+}
+body section .scroller {
+  z-index: 3;
   position: fixed;
-  top: 15vh;
-  right: 0;
-  width: 20vw;
+  top: 27vh;
+  right: 9vw;
+}
+body section .scroller .mouse {
+  position: absolute;
+  right: 0.3em;
+  height: 2em;
+  width: auto;
+}
+body section .scroller .wheel {
+  position: absolute;
+  right: 1em;
+  height: 1em;
+  width: auto;
+  animation: scroll-my-mouse 1s 2s infinite alternate;
+}
+body section .scroller span {
+  font-size: smaller;
+  position: fixed;
+  top: 30vh;
+  right: 5vw;
+}
+body section .info {
+  position: fixed;
+  display: flex;
+  top: 10vh;
+  width: 100vw;
+  justify-content: center;
+}
+body section .info .profile {
+  margin-left: 15vw;
+  display: block;
+  height: 12vh;
+  width: auto;
+  border-radius: 50%;
+}
+body section .info p {
+  color: #5A4736;
+  font-size: 1.5em;
+  padding-left: 2vw;
+}
+body section h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-block-start: 4em;
+  margin-block-end: 0;
+}
+body section h3 {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(240, 247, 252, 0.7);
+  margin-block-start: 0;
+}
+body section p {
+  font-family: "Open Sans", sans-serif;
+}
+body section .backdrop1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height: 70vh;
-  background: #06080A;
+  width: 100vw;
+  height: 100vh;
 }
-nav ul {
-  list-style: none;
-  padding: 2vw;
+body section .backdrop1 img {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 120vw;
+  height: 100vh;
 }
-nav li {
-  color: #91BBD0;
+body section .child {
+  height: 80vh;
+  display: flex;
+  margin: 0 9vw 0 32vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-nav li:hover {
-  text-decoration: underline;
+
+#home p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+#home span {
+  color: rgba(240, 247, 252, 0.7);
+}
+
+@media only screen and (max-width: 500px) {
+  .backdrop2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .backdrop2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .backdrop2 img {
+    display: block;
+    border-bottom: 1vh solid #5A4736;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    width: 100vw;
+    height: 99vh;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
