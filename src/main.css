@@ -52,9 +52,10 @@ nav {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   top: 0;
-  background-color: #f9f9f979;
+  left: 12vw;
+  background-color: #5C8B99;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -81,12 +82,25 @@ body {
   color: #f0f7fc;
   background: url(screen-background.png) bottom right no-repeat;
   background-size: cover;
+  font-style: "Open Sans", sans-serif;
 }
 body section {
-  margin-bottom: 10vh;
+  padding: 20vh 0 25vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+body section .content {
+  display: flex;
+  margin: 0 9vw 0 32vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body section .about div {
+  display: flex;
+  flex-direction: column;
 }
 body section .scroller {
   z-index: 3;
@@ -163,23 +177,6 @@ body section .backdrop1 img {
   width: 120vw;
   height: 100vh;
 }
-body section .child {
-  height: 80vh;
-  display: flex;
-  margin: 0 9vw 0 32vw;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#home p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-#home span {
-  color: rgba(240, 247, 252, 0.7);
-}
 
 .backdrop2 {
   display: none;
@@ -199,6 +196,19 @@ a.bigicon {
   }
   section .scroller {
     margin: 5vh 10vw 0 0;
+  }
+  section div.content {
+    margin: 0 20vw 0 40vw;
+  }
+  section div.content.about div {
+    flex-direction: row;
+    flex: 1;
+  }
+  section div.content.about div:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+  section div.content.about div div {
+    padding-bottom: 5vh;
   }
 
   div.icons a.zocial.bigicon {
