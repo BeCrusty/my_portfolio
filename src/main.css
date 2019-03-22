@@ -181,12 +181,16 @@ body section .child {
   color: rgba(240, 247, 252, 0.7);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 769px) {
   .backdrop2 {
     display: none;
   }
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 769px) {
+  section {
+    font-size: larger;
+  }
+
   .backdrop2 {
     position: fixed;
     top: 0;
@@ -199,12 +203,11 @@ body section .child {
   }
   .backdrop2 img {
     display: block;
-    border-bottom: 1vh solid #5A4736;
     position: absolute;
-    top: 0;
-    left: 10vw;
-    width: 100vw;
-    height: 99vh;
+    bottom: 0;
+    left: 5vw;
+    width: 110vw;
+    height: 124vh;
   }
 }
 
