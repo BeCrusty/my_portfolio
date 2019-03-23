@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Ben Crow</title>
     <link rel="stylesheet" href="src/normalize.css">
     <link rel="stylesheet" href="src/zocial.css">
     <link rel="stylesheet" href="src/main.css">
@@ -15,11 +15,12 @@
 
             <!-- Drop down menu from menu button seen on sidebar -->
             <nav class="dropdown">
+                <h3>Menu</h3>
                 <button class="dropbtn"></button>
                 <div class="dropdown-content">
-                    <a href="#home">Home</a>
-                    <a href="#aboutme">About</a>
-                    <a href="#projects">Projects</a>
+                    <a href="#home">About</a>
+                    <a href="#aboutme">Education</a>
+                    <a href="#projects"></a>
                 </div>
             </nav>
 
@@ -60,7 +61,12 @@
         <!-- Name and avatar image fixed above content space. -->
         <div class="info">
             <img class=profile src="src/myAvatar.png" alt="cartoon image of man's face. Brown hair, blue eyes, light skin and a small smile.">
-            <p>Ben Crow</p>
+            <div>
+                <h2>Ben Crow</h2>
+                <span>Budding programmer, avid reader, board gamer, adventurer & ex outdoor guide.</span>
+            </div>
+            
+            
         </div>
 
         <!-- Image to prompt viewer to scroll -->
@@ -122,27 +128,34 @@
 
 
         <!-- Section with table of previous projects with links to more detailed pages -->
-        
-        <div class="content projects">
-            <a id="projects"></a>
-            <h2>Projects</h2>
-            <div>
-                <h3>Code</h3>
-                <ol>
-                    <li>A code project</li>
-                </ol>
-                <h3>Writing</h3>
-                <ol>
-                    <li>A writing project</li>
-                </ol>
-                <h3>Hobby's</h3>
-                <ol>
-                    <li>Outdoor Stuff</li>
-                </ol>
-            </div>   
+        <a id="contact"></a>
+        <div class="content contact">
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Projects</th> 
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Coding</td>
+                    <td>3</td> 
+                </tr>
+                <tr>
+                    <td>Writing</td>
+                    <td>4</td> 
+                    <td>94</td>
+                </tr>
+            </table>
         </div>
     </section>
     <footer>
+        <div class="projectslink">
+            <h2><a href="/src/projects.html">Projects</a></h2>
+        </div>
+        <div class="pythonimg"></div>
+        <div class="rubyimg"></div>
+        <div class="htmlimg"></div>
+        <div class="cssimg"></div>
     </footer>
 </body>
 </html>
