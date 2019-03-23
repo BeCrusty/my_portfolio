@@ -5,6 +5,9 @@
   100% {top : 0.5em;}
 }
 
+
+// styling for the fixed sidebar containing the contact links/buttons
+
 header {
   .sidebar {
   z-index: 3;
@@ -23,6 +26,10 @@ header {
     }
   }
 }
+
+
+// Styling for the navigation dropdown menu
+
 nav {
   z-index: 3;
 }
@@ -37,7 +44,6 @@ nav {
   border: none;
   cursor: pointer;
 }
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
@@ -46,9 +52,7 @@ nav {
   h3 {
     display: none;
   }
-  // padding-top: 5vh;
 }
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -69,15 +73,15 @@ nav {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   text-align: center;
 }
-
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+
+// Main Page styling
 
 body{
   overflow-y : scroll;
@@ -87,6 +91,44 @@ body{
   font-family: $font;
   section {
     padding: 20vh 0 30vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-family: $title_font;
+      margin-block-start: 3em;
+      margin-block-end: 0;
+    }
+    h2 {
+      font-family: $title_font;
+    }
+    h3 {
+      font-family: $title_font;
+      color: $text_light;
+      margin-block-start: 0;
+    }
+    p {
+      font-family: $font;
+      margin-block-start: 0;
+      margin-block-end: 0; 
+    }
+    .backdrop1 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      img {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 120vw;
+        height: 100vh;
+      }
+    }
     .content {
       display: flex;
       margin: 0 9vw 0 32vw;
@@ -94,31 +136,10 @@ body{
       justify-content: center;
       align-items: center;
       text-align: center;
-    }
-
-    .about div {
-      display: flex;
-      flex-direction: column;
-      margin: 2vh 0;
-    
-    }
-    .scroller{
-      z-index: 3;
-      position: fixed;
-      top: 27vh;
-      right: 9vw;
-      .mouse {
-        position: absolute;
-        right: 0.3em;
-        height: 2em;
-        width: auto;
-      }
-      .wheel {
-        position: absolute;
-        right: 1em;
-        height: 1em;
-        width: auto;
-        animation: scroll-my-mouse 1s 2s infinite alternate;
+      #aboutmep {
+        margin-top: 2vh;
+        font-size: 2vh;
+        font-style: italic;
       }
     }
     .info{
@@ -149,45 +170,47 @@ body{
         padding: 2vw;
       }
     }
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    h1 {
-      font-family: $title_font;
-      margin-block-start: 3em;
-      margin-block-end: 0;
-    }
-    h2 {
-      font-family: $title_font;
-    }
-    h3 {
-      font-family: $title_font;
-      color: $text_light;
-      margin-block-start: 0;
-    }
-    p {
-      font-family: $font;
-      margin-block-start: 0;
-      margin-block-end: 0; 
-    }
-    .backdrop1 {
-      position: fixed;
-      // z-index: 1;
-      top: 0;
-      left: 0;
+    .education div {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
-      img {
-        display: block;
+      flex-direction: column;
+      margin: 1vh 0;
+    }
+    .work {
+      span {
+        padding-bottom: 1vh;
+      }
+      span, table {
+        font-size: smaller;
+      }
+      table tr {
+        padding: 1vh 0;
+      }
+      table th {
+        padding: 0 5px;
+      }
+    }
+    .contact{
+      p {
+        font-size: smaller;
+      }
+    }
+    .scroller{
+      z-index: 3;
+      position: fixed;
+      top: 27vh;
+      right: 9vw;
+      .mouse {
         position: absolute;
-        left: 0;
-        width: 120vw;
-        height: 100vh;
+        right: 0.3em;
+        height: 2em;
+        width: auto;
+      }
+      .wheel {
+        position: absolute;
+        right: 1em;
+        height: 1em;
+        width: auto;
+        animation: scroll-my-mouse 1s 2s infinite alternate;
       }
     }
   }
@@ -196,19 +219,25 @@ body{
 footer {
   position: fixed;
   bottom: 0;
+  height: 7vh;
   width: 100vw;
   background: rgba(255, 255, 255, 0.459);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  h2 {
+    text-decoration: underline;
+  }
   a {
-    color: black;
-    padding: 2vh 4vw;
+    color: rgb(0, 38, 163);
+    padding: 0 4vw;
     text-decoration: none;
     display: block;
+    background: rgba(92, 139, 153, 0.747);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     text-align: center;
+    border-radius: 5px;
   }
   .pythonimg {
     color: black;
@@ -251,7 +280,105 @@ a.bigicon {
   display: none;
 }
 
+
+// Separate styling for projects page
+
+body.projects {
+  background: $background;
+  height: 100vh;
+  width: 100vw;
+  .pygame {
+    margin: 2vh
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 2vh;
+  }
+  img {
+    display: block;
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    padding-bottom: 5vh;
+  }
+}
+
+
+// Separate styling for contact page
+
+body.contact{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: sans-serif;
+	border: 2px solid black;
+	height: 100vh;
+	background: url(contact-backing.png) top center no-repeat;
+	background-size: cover;
+  .contact-title
+  {
+    margin-top: 100px;
+    color: #5C8B99;
+    text-transform:uppercase;
+    transition: all 4s ease-in-out;
+  }
+  .contact-title h1{
+    font-size: 32px;
+    line-height: 10px;
+  }
+  .contact-title h2{
+    font-size: 16px;
+  }
+  form
+  {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+  }
+  .form-control
+  {
+    width: 600 px;
+    background: rgba(255, 255, 255, 0.514);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  textarea.form-control {
+    width: 20vw;
+    height: 20vh;
+  }
+  input
+  {
+    height: 45px;
+  }
+  form .submit
+  {
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight:bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  form .submit:hover 
+  {
+    background-color: #f44336;
+    cursor:pointer;
+  }
+}
+
+
 // Media Breakpoint for larger screens
+
 @media only screen and (min-width: 769px) {
   .backdrop1 {
     display: none;
@@ -269,6 +396,11 @@ a.bigicon {
     }
 }
   section {
+    // .content.work div {
+    //   span, table {
+    //     font-size: larger;
+    //   }
+    // }
     font-size: larger;
     .scroller {
       margin: 5vh 10vw 0 0;
@@ -276,15 +408,12 @@ a.bigicon {
     div.content {
     margin: 0 20vw 0 40vw;
     }
-    div.content.about div {
+    div.content.education div {
       flex-direction: row;
       flex: 1;
-      padding: 1vh 0 1vh 0;
+      border-bottom: 1px dashed $tiles;
       &:nth-of-type(2) {
         flex-direction: row-reverse;
-      }
-      div {
-        padding-bottom: 1vh 0 1vh;
       }
     }
     div.info img.profile {
