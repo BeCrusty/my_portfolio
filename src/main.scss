@@ -48,7 +48,7 @@ nav {
 .dropdown {
   position: relative;
   display: inline-block;
-  margin: 5vh 0 5vh 0;
+  margin: 3vh 0 0 0;
   h3 {
     display: none;
   }
@@ -57,8 +57,8 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: -4vh;
-  left: 6vh;
+  top: -2vh;
+  left: 7vh;
   background-color: $menu;
   min-width: 5vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -288,7 +288,7 @@ body.projects {
   height: 100vh;
   width: 100vw;
   .pygame {
-    margin: 2vh
+    margin:  0 2vw 0 12vw;;
   }
   h2 {
     text-align: center;
@@ -333,8 +333,7 @@ body.contact{
   .contact-title h2{
     font-size: 16px;
   }
-  form
-  {
+  form {
     margin-top: 50px;
     transition: all 4s ease-in-out;
   }
@@ -391,16 +390,11 @@ body.contact{
       display: block;
     }
     .dropdown-content {
-      top: 7vh;
+      top: 2vh;
       left: 7vh;
     }
 }
   section {
-    // .content.work div {
-    //   span, table {
-    //     font-size: larger;
-    //   }
-    // }
     font-size: larger;
     .scroller {
       margin: 5vh 10vw 0 0;
@@ -424,10 +418,8 @@ body.contact{
     display: inline-block;
     width: 8vw;
     font-size: 1vw;
-    // width:9vw;
   }
   .backdrop2 {
-    // z-index: 1;
     display: block;
     position: fixed;
     top: 0;

@@ -1,10 +1,5 @@
 <!-- Project documentation is to be compiled as a single markdown file named README.md
 
-This file should contain,
-
-A link (URL) to your published portfolio website
-A link to your GitHub repository
-Ensure the repository (repo) is accessible by your Educators
 Description of your portfolio website, including,
 Purpose
 Functionality / features
@@ -24,6 +19,27 @@ Short Answer Q&A - Include short answers to the following questions,
 Describe key events in the development of the internet from the 1980s to today (max. 150 words)
 Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers (max. 150 words)
 Reflect on one aspect of the development of internet technologies and how it has contributed to the world today (max. 150 words) -->
+
+# My Portfolio Website
+
+[This is the published version of my website](https://becrusty.github.io "Benjamin Crow")
+[This is the link to the full github repository](https://github.com/BeCrusty/my_portfolio "My_Portfolio")
+[This repo is where the site is hosted from and only contains src files](https://github.com/BeCrusty/becrusty.github.io)
+
+## Purpose
+This website is intended to present me as a potential employee, essentially acting as a digital resume. With that in mind I have included key information on my education, work history, soft and hard skills. Incorporated into all of this is information and design that communicate my personality and culture as an employee.
+
+## Features
+The website incorporates a range of features that emphasise my design capabilities and functional skills.
+Key design features include:
+  * A fixed viewport image that frames content and works responsively across different screen sizes.
+  * A consistent colour scheme across the site that prioritises two complementary colours with some lighter colours for visibility.
+  * Careful positioning of key elements, e.g. menu button, to ensure visibility.
+  * Consistent font selection, with one font for headers and one for text content right through the main page.
+  * Use of 
+Key aspects of functionality
+
+
 
 # H1
 ## H2
