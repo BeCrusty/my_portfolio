@@ -16,6 +16,7 @@ This website is intended to present me as a potential employee, essentially acti
 
 ### Features
 The website incorporates a range of features that emphasise my *design capabilities* and *functional skills*.
+
 Key design features include:
   * A fixed viewport image that frames content and works responsively across different screen sizes.
   * A consistent colour scheme across the site that prioritises two complementary colours with some lighter colours for visibility.
