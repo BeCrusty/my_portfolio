@@ -1,9 +1,5 @@
 <!-- Project documentation is to be compiled as a single markdown file named README.md
 
-Description of your portfolio website, including,
-Purpose
-Functionality / features
-Sitemap
 Screenshots
 Target audience
 Tech stack (e.g. html, css, deployment platform, etc)
@@ -30,15 +26,53 @@ Reflect on one aspect of the development of internet technologies and how it has
 This website is intended to present me as a potential employee, essentially acting as a digital resume. With that in mind I have included key information on my education, work history, soft and hard skills. Incorporated into all of this is information and design that communicate my personality and culture as an employee.
 
 ## Features
-The website incorporates a range of features that emphasise my design capabilities and functional skills.
+The website incorporates a range of features that emphasise my *design capabilities* and *functional skills*.
 Key design features include:
   * A fixed viewport image that frames content and works responsively across different screen sizes.
   * A consistent colour scheme across the site that prioritises two complementary colours with some lighter colours for visibility.
   * Careful positioning of key elements, e.g. menu button, to ensure visibility.
   * Consistent font selection, with one font for headers and one for text content right through the main page.
-  * Use of 
-Key aspects of functionality
+  * Flexbox is used to change up the layout of my educational info.
+  * A table is used to layout my work history in a visual, readable format.
 
+Key functionality:
+  * A fixed sidebar links to social media sites, github etc. using the distinctive icons/buttons.
+  * The top left of the sidebar has a menu icon that holds a dropdown list linking to key parts of the main page.
+  * At the bottom of the sidebar is an email icon that links to a separate contact me page.
+  * The footer displays a series of icons showing languages I have worked in and a link to a separate page showing previous projects.
+  * The projects page contains an interactive python console with a prebuilt text game.
+  * The contacts page has a functional contact me form.
+
+  ---
+
+## Sitemap
+### XML version
+Below is a url based sitemap and a visual representation of the connection between the pages.
+```
+<url>
+  <loc>https://becrusty.github.io/</loc>
+  <lastmod>2019-03-24T00:49:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://becrusty.github.io/contact.html</loc>
+  <lastmod>2019-03-24T00:49:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://becrusty.github.io/projects.html</loc>
+  <lastmod>2019-03-24T00:49:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://becrusty.github.io/index.html</loc>
+  <lastmod>2019-03-24T00:49:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+</urlset>
+```
+Inline-style image: 
+![sitemap diagram](docs/sitemap.png "Visual Sitemap")
 
 
 # H1
