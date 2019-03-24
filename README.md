@@ -2,7 +2,9 @@
 # My Portfolio Website
 
 [This is the published version of my website](https://becrusty.github.io "Benjamin Crow")
+
 [This is the link to the full github repository](https://github.com/BeCrusty/my_portfolio "My_Portfolio")
+
 [This repo is where the site is hosted from and only contains src files](https://github.com/BeCrusty/becrusty.github.io)
 
 ## Description
