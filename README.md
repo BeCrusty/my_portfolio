@@ -1,7 +1,7 @@
 
 # My Portfolio Website
 
-[This is the published version of my website "https://crowbe.github.io"](https://becrusty.github.io "Benjamin Crow")
+[This is the published version of my website "https://crowbe.github.io"](https://crowbe.github.io "Benjamin Crow")
 
 [This is the link to the full github repository](https://github.com/BeCrusty/my_portfolio "My_Portfolio")
 
