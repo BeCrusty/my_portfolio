@@ -1,11 +1,7 @@
 
 # My Portfolio Website
 
-[This is the published version of my website "https://crowbe.github.io"](https://crowbe.github.io "Benjamin Crow")
-
-[This is the link to the full github repository](https://github.com/BeCrusty/my_portfolio "My_Portfolio")
-
-[This repo is where the site is hosted from and only contains src files](https://github.com/BeCrusty/becrusty.github.io)
+This is the code for an older portfolio website. It was the first website I built from scratch and used only html,css and scss.
 
 ## Description
 
